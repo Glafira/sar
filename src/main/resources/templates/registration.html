@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SpringExample</title>
+</head>
+<body>
+<form method="POST" th:action="@{/registration}"  th:object="${userForm}" class="form-signin">
+    <h2 >Create your account</h2>
+
+    <div>
+    <input type="text" th:field="*{username}" class="form-control" placeholder="Username"
+                        autofocus id="user-name-input"/>
+        <label for="user-name-input">UserName</label>
+    </div>
+
+   <div>
+            <input type="password" th:field="*{password}"  placeholder="Password" id="password-input"/>
+       <label for="password-input">Password</label>
+   </div>
+
+
+    <button class="" type="submit">Submit</button>
+</form>
+</body>
+</html>

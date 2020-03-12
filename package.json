@@ -1,0 +1,9 @@
+{
+  "name": "sar",
+  "version": "1.0.0",
+  "description": "Siomple ",
+  "main": "index.js",
+  "repository": "git@github.com:Glafira/sar.git",
+  "author": "Glafira",
+  "license": "MIT"
+}
